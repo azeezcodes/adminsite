@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 import React from "react";
 import LinearIndeterminate from "@/components/ProgressLoader";
 import { Suspense } from "react";
-import { CustomMuiTheme } from "theme";
+// import { CustomMuiTheme } from "theme";
 
 export default function App({ Component, pageProps }: AppProps) {
    const { pathname, asPath, events } = useRouter();
@@ -26,7 +26,7 @@ export default function App({ Component, pageProps }: AppProps) {
       };
    });
 
-   const theme = createTheme({ palette: { ...CustomMuiTheme } });
+   const theme = createTheme( );
    return (
       <React.Fragment>
          {loading && <LinearIndeterminate />}
