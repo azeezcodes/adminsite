@@ -22,13 +22,7 @@ const Header = () => {
          <div className="h-full w-[92%] mx-auto lg:bg-white flex justify-between items-center">
             <div className="right">
                <div className="lg:hidden">
-                  <Image
-                     src="/Logo.png"
-                     width={80}
-                     height={80}
-                     alt="logo"
-                     className=""
-                  />
+                 <p className="text-2xl font-extrabold font-mono text-gray-100 ">EazyCommun</p>
                </div>
                <div className="hidden lg:block border-[1px] border-gray-300 py-1 px-2 rounded-sm">
                   <input

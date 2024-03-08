@@ -3,23 +3,17 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import Link from "next/link";
 
-
 type Props = {};
 
 const Sidebar = () => {
    const router = useRouter();
    return (
-      <div className="bg-[#242F9B] h-[100vh] fixed pt-[3rem] w-[20%]">
+      <div className="bg-[#1C3144] h-[100vh] fixed pt-[3rem] w-[20%]">
          <div className="flex w-[100%]  pl-[42px]">
             <Link href="/">
-               <Image
-                  src="/Logo.png"
-                  width={130}
-                  height={130}
-                  alt="logo"
-                  className=""
-                  loading="lazy"
-               />
+               <p className="text-2xl font-extrabold font-mono text-gray-100 ">
+                  EazyCommun
+               </p>
             </Link>
          </div>
 
@@ -27,8 +21,8 @@ const Sidebar = () => {
             <div
                className={` ${
                   router.pathname === "/"
-                     ? "flex gap-4 bg-[#FF6E31] items-center h-[56px] pl-[42px] "
-                     : " flex gap-4 hover:bg-[#FF6E31] items-center h-[56px] pl-[42px]"
+                     ? "flex gap-4 bg-[#7D9498] items-center h-[56px] pl-[42px] "
+                     : " flex gap-4 hover:bg-[#7D9498] items-center h-[56px] pl-[42px]"
                }`}
             >
                <Image src="/element4.svg" alt="" width={20} height={20} />
@@ -42,8 +36,8 @@ const Sidebar = () => {
             <div
                className={` ${
                   router.pathname === "/notes"
-                     ? "flex gap-4 bg-[#FF6E31] items-center h-[56px] pl-[42px] "
-                     : " flex gap-4 hover:bg-[#FF6E31] items-center h-[56px] pl-[42px]"
+                     ? "flex gap-4 bg-[#7D9498] items-center h-[56px] pl-[42px] "
+                     : " flex gap-4 hover:bg-[#7D9498] items-center h-[56px] pl-[42px]"
                }`}
             >
                <Image src="/book1.svg" alt="" width={20} height={20} />
@@ -54,8 +48,8 @@ const Sidebar = () => {
             <div
                className={` ${
                   router.pathname === "/teachers"
-                     ? "flex gap-4 bg-[#FF6E31] items-center h-[56px] pl-[42px] "
-                     : " flex gap-4 hover:bg-[#FF6E31] items-center h-[56px] pl-[42px]"
+                     ? "flex gap-4 bg-[#7D9498] items-center h-[56px] pl-[42px] "
+                     : " flex gap-4 hover:bg-[#7D9498] items-center h-[56px] pl-[42px]"
                }`}
             >
                <Image src="/profile2user.svg" alt="" width={20} height={20} />
@@ -69,8 +63,8 @@ const Sidebar = () => {
             <div
                className={` ${
                   router.pathname === "/posthistory"
-                     ? "flex gap-4 bg-[#FF6E31] items-center h-[56px] pl-[42px] "
-                     : " flex gap-4 hover:bg-[#FF6E31] items-center h-[56px] pl-[42px]"
+                     ? "flex gap-4 bg-[#7D9498] items-center h-[56px] pl-[42px] "
+                     : " flex gap-4 hover:bg-[#7D9498] items-center h-[56px] pl-[42px]"
                }`}
             >
                <Image src="/people.svg" alt="" width={20} height={20} />
@@ -84,8 +78,8 @@ const Sidebar = () => {
             <div
                className={` ${
                   router.pathname === "/announcement"
-                     ? "flex gap-4 bg-[#FF6E31] items-center h-[56px] pl-[42px] "
-                     : " flex gap-4 hover:bg-[#FF6E31] items-center h-[56px] pl-[42px]"
+                     ? "flex gap-4 bg-[#7D9498] items-center h-[56px] pl-[42px] "
+                     : " flex gap-4 hover:bg-[#7D9498] items-center h-[56px] pl-[42px]"
                }`}
             >
                <Image src="/microscope.svg" alt="" width={20} height={20} />
@@ -99,8 +93,8 @@ const Sidebar = () => {
             <div
                className={` ${
                   router.pathname === "/setting"
-                     ? "flex gap-4 bg-[#FF6E31] items-center h-[56px] pl-[42px] "
-                     : " flex gap-4 hover:bg-[#FF6E31] items-center h-[56px] pl-[42px]"
+                     ? "flex gap-4 bg-[#7D9498] items-center h-[56px] pl-[42px] "
+                     : " flex gap-4 hover:bg-[#7D9498] items-center h-[56px] pl-[42px]"
                }`}
             >
                {" "}
@@ -113,16 +107,7 @@ const Sidebar = () => {
          </div>
 
          {/* ...... */}
-         <div className="rounded-lg bg-[#4E57AE] flex flex-col  items-center px-[2rem] h-[200px]  w-[210px] mx-auto mt-12 ">
-            <p className="text-white font-[700] text-[1.1rem] my-4">Upgrade</p>
-            <p className="text-white font-light text-[0.7rem] text-center">
-               Duis sed rutrum massa cras elit. Dictumst curabitur egestas a sit
-               egestas habitant mauris id
-            </p>
-            <button className="bg-[#FF6E31] text-white py-2 px-10 my-auto  ">
-               UPGRADE
-            </button>
-         </div>
+       
       </div>
    );
 };
